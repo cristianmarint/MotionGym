@@ -1,10 +1,18 @@
 <?php
+/**
+ * @ Author: @CristianMarinT
+ * @ Create Time: 2019-07-24 11:51:10
+ * @ Modified by: @CristianMarinT
+ * @ Modified time: 2019-07-24 13:41:09
+ * @ Description:
+ */
+
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration
+class CreatePaymentMethodTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +21,11 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('payment_method', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('name',250);
+            $table->longText('description');
+            
             $table->softDeletes();
             $table->timestamps();
         });
@@ -32,6 +38,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('payment_method');
     }
 }
