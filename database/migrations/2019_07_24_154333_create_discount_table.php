@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 10:46:33
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-24 13:56:44
+ * @ Modified time: 2019-07-24 21:19:11
  * @ Description:
  */
 
@@ -24,11 +24,12 @@ class CreateDiscountTable extends Migration
         Schema::create('discount', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name',250);
-            $table->longText('description')->nullable();
-            $table->unsignedInteger('percentage')->nullable();
+            $table->text('description')->nullable();
+            $table->tinyInteger('percentage',false,false)->nullable()->default(0);
             
             $table->softDeletes();
             $table->timestamps();
+            
         });
     }
 

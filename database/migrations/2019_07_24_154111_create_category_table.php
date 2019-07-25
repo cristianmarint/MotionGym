@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 10:43:23
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-24 13:43:55
+ * @ Modified time: 2019-07-24 21:19:38
  * @ Description:
  */
 
@@ -24,7 +24,7 @@ class CreateCategoryTable extends Migration
         Schema::create('category', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name',250);
-            $table->longText('description')->nullable();
+            $table->text('description')->nullable();
 
             $table->unsignedInteger('parent_category_id')->nullable();
             $table->foreign('parent_category_id')->references('id')->on('category')

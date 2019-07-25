@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 10:50:05
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-24 13:57:40
+ * @ Modified time: 2019-07-24 15:59:21
  * @ Description:
 */
 
@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateReturnTable extends Migration
+class CreateRefundTable extends Migration
 {
     /**
      * Run the migrations.
@@ -21,7 +21,7 @@ class CreateReturnTable extends Migration
      */
     public function up()
     {
-        Schema::create('return', function (Blueprint $table) {
+        Schema::create('refund', function (Blueprint $table) {
             $table->increments('id');
             $table->string('reason',250);
             $table->longText('description')->nullable();
@@ -44,6 +44,6 @@ class CreateReturnTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('return');
+        Schema::dropIfExists('refund');
     }
 }

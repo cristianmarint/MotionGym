@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-01 22:03:05
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-24 13:45:58
+ * @ Modified time: 2019-07-24 21:19:59
  * @ Description:
  */
 
@@ -25,7 +25,7 @@ class CreateServiceTable extends Migration
             $table->increments('id');
             $table->string('name',250);
             $table->string('photo', 500)->default(null)->nullable(true);          
-            $table->longText('description');
+            $table->text('description');
             $table->decimal('precio', 8, 2);
 
             $table->softDeletes();

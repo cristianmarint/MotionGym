@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 10:39:47
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-24 13:51:33
+ * @ Modified time: 2019-07-24 21:19:32
  * @ Description:
  */
 
@@ -23,13 +23,12 @@ class CreateProductTable extends Migration
     {
         Schema::create('product', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name',250);
+            $table->text('description')->nullable();
             $table->float('purchase_price', 6,3)->nullable();
             $table->float('sale_price', 6,3);
-            $table->unsignedInteger('amount')->nullable();
-            $table->unsignedInteger('category_id')->nullable();
-            
-            $table->foreign('category_id')->references('id')->on('category')
-            ->onUpdate('cascade')->onDelete('restrict');
+            $table->integer('amount')->nullable();
+
             
             $table->softDeletes();
             $table->timestamps();
