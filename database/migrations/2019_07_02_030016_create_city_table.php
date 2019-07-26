@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-01 22:00:16
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-24 13:46:09
+ * @ Modified time: 2019-07-25 22:15:02
  * @ Description:
  */
 
@@ -24,7 +24,7 @@ class CreateCityTable extends Migration
     {
         Schema::create('city', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name',50);
+            $table->string('name',250);
             $table->unsignedInteger('state_id');
             $table->softDeletes();
             $table->timestamps();

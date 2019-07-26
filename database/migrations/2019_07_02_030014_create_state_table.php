@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-01 22:01:35
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-24 09:49:08
+ * @ Modified time: 2019-07-25 22:15:07
  * @ Description:
  */
 
@@ -21,7 +21,7 @@ class CreateStateTable extends Migration
     {
         Schema::create('state', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name',100);
+            $table->string('name',250);
             $table->softDeletes();
             $table->timestamps();
         });

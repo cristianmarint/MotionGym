@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-01 22:06:07
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-24 13:46:02
+ * @ Modified time: 2019-07-25 22:43:40
  * @ Description:
  */
 
@@ -26,10 +26,10 @@ class CreatePersonTable extends Migration
             $table->string('identification', 50)->nullable(false);
             $table->string('identification_type', 50)->nullable();
             $table->string('photo', 500)->default(null)->nullable();          
-            $table->string('name',100)->nullable();
-            $table->string('middle_name',100)->nullable();
-            $table->string('first_surname',100)->nullable();
-            $table->string('second_surname',100)->nullable();
+            $table->string('name',250)->nullable();
+            $table->string('middle_name',250)->nullable();
+            $table->string('first_surname',250)->nullable();
+            $table->string('second_surname',250)->nullable();
             $table->char('blood_group_rh',3)->nullable();
             $table->unsignedInteger('insurance_company_id')->nullable();
             $table->unsignedInteger('city_birth_id')->nullable();
