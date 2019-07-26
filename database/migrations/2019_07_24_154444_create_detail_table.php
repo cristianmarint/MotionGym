@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 10:36:58
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-24 13:51:39
+ * @ Modified time: 2019-07-26 09:05:40
  * @ Description:
  */
 
@@ -24,13 +24,13 @@ class CreateDetailTable extends Migration
         Schema::create('detail', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->unsignedInteger('discount_id')->nullable();
+            $table->unsignedInteger('extra_id')->nullable();
             $table->unsignedInteger('product_id')->nullable();
             $table->unsignedInteger('invoice_id')->nullable();
             $table->unsignedInteger('amount');
 
             
-            $table->foreign('discount_id')->references('id')->on('discount')
+            $table->foreign('extra_id')->references('id')->on('extra')
             ->onUpdate('cascade')->onDelete('restrict');
             $table->foreign('product_id')->references('id')->on('product')
             ->onUpdate('cascade')->onDelete('restrict');

@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 10:46:33
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-24 21:19:11
+ * @ Modified time: 2019-07-26 09:05:19
  * @ Description:
  */
 
@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDiscountTable extends Migration
+class CreateExtraTable extends Migration
 {
     /**
      * Run the migrations.
@@ -21,7 +21,7 @@ class CreateDiscountTable extends Migration
      */
     public function up()
     {
-        Schema::create('discount', function (Blueprint $table) {
+        Schema::create('extra', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name',250);
             $table->text('description')->nullable();
@@ -40,6 +40,6 @@ class CreateDiscountTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('discount');
+        Schema::dropIfExists('extra');
     }
 }

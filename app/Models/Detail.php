@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 15:47:49
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-24 16:15:33
+ * @ Modified time: 2019-07-26 09:07:12
  * @ Description:
  */
 
@@ -17,7 +17,7 @@ class Detail extends Model
     protected $table = 'detail';
 
     protected $fillable = [
-        'discount_id',
+        'extra_id',
         'product_id',
         'invoice_id',
         'amount'
@@ -38,8 +38,8 @@ class Detail extends Model
         return $this->belongsTo('Product');
     }
 
-    public function discount()
+    public function extra()
     {
-        return $this->belongsTo('Discount');
+        return $this->belongsTo('Extra');
     }
 }
