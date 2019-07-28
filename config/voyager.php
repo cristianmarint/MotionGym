@@ -149,7 +149,10 @@ return [
         ],
 
         'widgets' => [
-
+            'App\\Widgets\\ProductDimmer',
+            'App\\Widgets\\PersonDimmer',
+            'App\\Widgets\\CurrentYearIncomeDimmer',
+            'App\\Widgets\\CurrentMonthIncomeDimmer',
         ],
 
     ],

@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 15:26:17
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-28 14:23:55
+ * @ Modified time: 2019-07-28 16:42:45
  * @ Description:
  */
 
@@ -20,6 +20,7 @@ class Invoice extends Model
     use SoftDeletes;
 
     protected $fillable = [
+        'created_at',
         'client_person_id',
         'seller_user_id',
         'payment_method_id',
