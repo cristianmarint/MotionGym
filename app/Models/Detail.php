@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 15:47:49
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-26 09:07:12
+ * @ Modified time: 2019-07-28 14:23:42
  * @ Description:
  */
 
@@ -11,10 +11,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Detail extends Model
 {
     protected $table = 'detail';
+
+    use SoftDeletes;
 
     protected $fillable = [
         'extra_id',

@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 15:26:17
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-24 15:55:05
+ * @ Modified time: 2019-07-28 14:23:55
  * @ Description:
  */
 
@@ -11,10 +11,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Invoice extends Model
 {
     protected $table = 'invoice';
+    
+    use SoftDeletes;
 
     protected $fillable = [
         'client_person_id',

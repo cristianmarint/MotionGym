@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 15:14:49
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-24 15:43:32
+ * @ Modified time: 2019-07-28 14:23:39
  * @ Description:
  */
 
@@ -11,10 +11,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class City extends Model
 {
     protected $table = 'city';
+
+    use SoftDeletes;
     
     protected $fillable = [
         'name',

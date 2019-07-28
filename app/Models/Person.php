@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 15:22:12
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-24 16:14:23
+ * @ Modified time: 2019-07-28 14:24:05
  * @ Description:
  */
 
@@ -11,10 +11,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Person extends Model
 {
     protected $table = 'person';
+
+    use SoftDeletes;
 
     protected $fillable = [
         'insurance_company_id',

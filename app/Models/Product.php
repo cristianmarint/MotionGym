@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 15:50:57
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-24 20:25:59
+ * @ Modified time: 2019-07-28 14:24:20
  * @ Description:
  */
 
@@ -11,10 +11,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Product extends Model
 {
     protected $table = 'product';
+
+    use SoftDeletes;
 
     protected $fillable = [
         'category_id',
