@@ -170,11 +170,10 @@ Project: [https://github.com/cristianmarint/MotionGym](https://github.com/cristi
 [stars-url]: https://github.com/cristianmarint/MotionGym/stargazers
 [issues-shield]: https://img.shields.io/github/issues/cristianmarint/MotionGy,.svg?style=flat-square
 [issues-url]: https://github.com/cristianmarint/MotionGym/issues
-[license-shield]: https://img.shields.io/github/license/cristianmarint/Best-README-Template.svg?style=flat-square
+[license-shield]: https://img.shields.io/github/license/cristianmarint/MotionGym.svg?style=flat-square
 [license-url]: https://github.com/cristianmarint/MotionGym/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [product-screenshot]: docs/images/screenshot.png
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ2ODU5ODU2LC0xNDQwNTU1NTM2LC0xMD
-g0Nzg5MDQwXX0=
+eyJoaXN0b3J5IjpbMTQyOTE0MDQ5NCwtMTQ0MDU1NTUzNiwtMT
+A4NDc4OTA0MF19
 -->
