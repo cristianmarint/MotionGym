@@ -10,14 +10,16 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', function () {
+    return redirect('admin');
+});
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
