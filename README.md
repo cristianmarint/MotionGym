@@ -9,8 +9,8 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-![laravel-shield]
-![]
+![Laravel-shield][Laravel-shield]
+![Voyager-shield][Voyager-shield]
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -173,10 +173,11 @@ Project: [https://github.com/cristianmarint/MotionGym](https://github.com/cristi
 [issues-shield]: https://img.shields.io/github/issues/cristianmarint/MotionGy,.svg?style=flat-square
 [issues-url]: https://github.com/cristianmarint/MotionGym/issues
 [license-shield]: https://img.shields.io/github/license/cristianmarint/MotionGym.svg?style=flat-square
-[laravel-shield]: https://img.shields.io/badge/Laravel-5.8-f55247
+[Laravel-shield]: https://img.shields.io/badge/Laravel-5.8-f55247
+[Voyager-shield]: https://img.shields.io/badge/Voyager-1.2-22A7F0
 [license-url]: https://github.com/cristianmarint/MotionGym/blob/master/LICENSE.txt
 [product-screenshot]: docs/images/screenshot.png
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODAxODk2NzgsMTQyOTE0MDQ5NCwtMT
-Q0MDU1NTUzNiwtMTA4NDc4OTA0MF19
+eyJoaXN0b3J5IjpbMzE0NDEwMjk5LDE0MjkxNDA0OTQsLTE0ND
+A1NTU1MzYsLTEwODQ3ODkwNDBdfQ==
 -->
