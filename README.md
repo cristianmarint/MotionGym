@@ -9,6 +9,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+[![Laravel][laravel-shield]][laravel-shield]
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -175,6 +176,6 @@ Project: [https://github.com/cristianmarint/MotionGym](https://github.com/cristi
 [license-url]: https://github.com/cristianmarint/MotionGym/blob/master/LICENSE.txt
 [product-screenshot]: docs/images/screenshot.png
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYzMzQyOTc0LDE0MjkxNDA0OTQsLTE0ND
+eyJoaXN0b3J5IjpbOTcxMTU1NjI0LDE0MjkxNDA0OTQsLTE0ND
 A1NTU1MzYsLTEwODQ3ODkwNDBdfQ==
 -->
