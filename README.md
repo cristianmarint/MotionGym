@@ -34,9 +34,9 @@ A open source gym management system build.
     <br />
     <br />
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/cristianmarint/MotionGym/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/cristianmarint/MotionGym/issues">Request Feature</a>
   </p>
 </p>
 
@@ -174,3 +174,6 @@ Project: [https://github.com/cristianmarint/MotionGym](https://github.com/cristi
 [license-url]: https://github.com/cristianmarint/MotionGym/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [product-screenshot]: docs/images/screenshot.png
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEwODQ3ODkwNDBdfQ==
+-->
