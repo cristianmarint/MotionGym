@@ -16,7 +16,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/cristianmarint/MotionGym">
-    <img src="docs/imgs/logo.png" alt="Logo" width="80" height="80">
+    <img src="docs/imgs/logo.png" alt="Logo" width="120" height="120">
   </a>
 
   <h3 align="center">Motion Gym</h3>
@@ -170,6 +170,6 @@ Project: [https://github.com/cristianmarint/MotionGym](https://github.com/cristi
 [license-url]: https://github.com/cristianmarint/MotionGym/blob/master/LICENSE.txt
 [product-screenshot]: docs/images/screenshot.png
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MDcxMDExMCwzMTQ0MTAyOTksMTQyOT
+eyJoaXN0b3J5IjpbMjAyNjcwNDMwNiwzMTQ0MTAyOTksMTQyOT
 E0MDQ5NCwtMTQ0MDU1NTUzNiwtMTA4NDc4OTA0MF19
 -->
