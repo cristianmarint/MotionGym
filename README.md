@@ -88,6 +88,9 @@ Its recommend to use [Xampp](https://www.apachefriends.org/es/index.html) or [Ma
 `php artisan migrate`
 4. Seed database
 `php artisan db:seed`
+5. Create your own admin user
+`php artisan voyager:admin your_email@provider.com --create `
+
 
 
 
@@ -166,7 +169,7 @@ Project: [https://github.com/cristianmarint/MotionGym](https://github.com/cristi
 [license-url]: https://github.com/cristianmarint/MotionGym/blob/master/LICENSE.txt
 [product-screenshot]: docs/images/screenshot.png
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMjUxMDMwNSwyMDI2NzA0MzA2LDMxND
-QxMDI5OSwxNDI5MTQwNDk0LC0xNDQwNTU1NTM2LC0xMDg0Nzg5
-MDQwXX0=
+eyJoaXN0b3J5IjpbMjA1MDkxNDYyOSwtNjAyNTEwMzA1LDIwMj
+Y3MDQzMDYsMzE0NDEwMjk5LDE0MjkxNDA0OTQsLTE0NDA1NTU1
+MzYsLTEwODQ3ODkwNDBdfQ==
 -->
