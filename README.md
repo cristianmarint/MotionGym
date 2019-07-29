@@ -171,9 +171,10 @@ Project: [https://github.com/cristianmarint/MotionGym](https://github.com/cristi
 [issues-shield]: https://img.shields.io/github/issues/cristianmarint/MotionGy,.svg?style=flat-square
 [issues-url]: https://github.com/cristianmarint/MotionGym/issues
 [license-shield]: https://img.shields.io/github/license/cristianmarint/MotionGym.svg?style=flat-square
+[laravel-shield]:[https://img.shields.io/badge/Laravel-5.8-f55247](https://img.shields.io/badge/Laravel-5.8-f55247)
 [license-url]: https://github.com/cristianmarint/MotionGym/blob/master/LICENSE.txt
 [product-screenshot]: docs/images/screenshot.png
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyOTE0MDQ5NCwtMTQ0MDU1NTUzNiwtMT
-A4NDc4OTA0MF19
+eyJoaXN0b3J5IjpbNzYzMzQyOTc0LDE0MjkxNDA0OTQsLTE0ND
+A1NTU1MzYsLTEwODQ3ODkwNDBdfQ==
 -->
