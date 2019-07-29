@@ -1,14 +1,6 @@
 
 # Motion Gym
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 ![Laravel-shield][Laravel-shield]
 ![Voyager-shield][Voyager-shield]
 [![Contributors][contributors-shield]][contributors-url]
@@ -178,6 +170,6 @@ Project: [https://github.com/cristianmarint/MotionGym](https://github.com/cristi
 [license-url]: https://github.com/cristianmarint/MotionGym/blob/master/LICENSE.txt
 [product-screenshot]: docs/images/screenshot.png
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE0NDEwMjk5LDE0MjkxNDA0OTQsLTE0ND
-A1NTU1MzYsLTEwODQ3ODkwNDBdfQ==
+eyJoaXN0b3J5IjpbMzE0Njk0NzgwLDMxNDQxMDI5OSwxNDI5MT
+QwNDk0LC0xNDQwNTU1NTM2LC0xMDg0Nzg5MDQwXX0=
 -->
