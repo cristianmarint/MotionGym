@@ -158,7 +158,7 @@ Project: [https://github.com/cristianmarint/MotionGym](https://github.com/cristi
 [forks-url]: https://github.com/cristianmarint/MotionGym/network/members
 [stars-shield]: https://img.shields.io/github/stars/cristianmarint/MotionGym.svg?style=flat-square
 [stars-url]: https://github.com/cristianmarint/MotionGym/stargazers
-[issues-shield]: https://img.shields.io/github/issues/cristianmarint/MotionGy,.svg?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/cristianmarint/MotionGym.svg?style=flat-square
 [issues-url]: https://github.com/cristianmarint/MotionGym/issues
 [license-shield]: https://img.shields.io/github/license/cristianmarint/MotionGym.svg?style=flat-square
 [Laravel-shield]: https://img.shields.io/badge/Laravel-5.8-f55247
@@ -166,7 +166,7 @@ Project: [https://github.com/cristianmarint/MotionGym](https://github.com/cristi
 [license-url]: https://github.com/cristianmarint/MotionGym/blob/master/LICENSE.txt
 [product-screenshot]: docs/images/screenshot.png
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Njg1MTA5MTIsMjAyNjcwNDMwNiwzMT
-Q0MTAyOTksMTQyOTE0MDQ5NCwtMTQ0MDU1NTUzNiwtMTA4NDc4
-OTA0MF19
+eyJoaXN0b3J5IjpbLTYwMjUxMDMwNSwyMDI2NzA0MzA2LDMxND
+QxMDI5OSwxNDI5MTQwNDk0LC0xNDQwNTU1NTM2LC0xMDg0Nzg5
+MDQwXX0=
 -->
