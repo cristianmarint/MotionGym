@@ -90,7 +90,8 @@ Its recommend to use [Xampp](https://www.apachefriends.org/es/index.html) or [Ma
 `php artisan db:seed`
 5. Create your own admin user
 `php artisan voyager:admin your_email@provider.com --create `
-
+> or use 
+> cristianmarint@motiongym.com 12345678
 
 
 
@@ -169,7 +170,7 @@ Project: [https://github.com/cristianmarint/MotionGym](https://github.com/cristi
 [license-url]: https://github.com/cristianmarint/MotionGym/blob/master/LICENSE.txt
 [product-screenshot]: docs/images/screenshot.png
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MDkxNDYyOSwtNjAyNTEwMzA1LDIwMj
+eyJoaXN0b3J5IjpbMTI5NTg3ODM4MSwtNjAyNTEwMzA1LDIwMj
 Y3MDQzMDYsMzE0NDEwMjk5LDE0MjkxNDA0OTQsLTE0NDA1NTU1
 MzYsLTEwODQ3ODkwNDBdfQ==
 -->
