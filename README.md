@@ -1,6 +1,3 @@
-
-# Motion Gym
-
 ![Laravel-shield][Laravel-shield]
 ![Voyager-shield][Voyager-shield]
 [![Contributors][contributors-shield]][contributors-url]
@@ -9,8 +6,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-
-
+<link rel="shortcut icon" href="http://www.iconj.com/ico/0/j/0jfxz36x0g.ico" type="image/x-icon" />
 
 <!-- PROJECT LOGO -->
 <br />
@@ -170,6 +166,7 @@ Project: [https://github.com/cristianmarint/MotionGym](https://github.com/cristi
 [license-url]: https://github.com/cristianmarint/MotionGym/blob/master/LICENSE.txt
 [product-screenshot]: docs/images/screenshot.png
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNjcwNDMwNiwzMTQ0MTAyOTksMTQyOT
-E0MDQ5NCwtMTQ0MDU1NTUzNiwtMTA4NDc4OTA0MF19
+eyJoaXN0b3J5IjpbLTE5Njg1MTA5MTIsMjAyNjcwNDMwNiwzMT
+Q0MTAyOTksMTQyOTE0MDQ5NCwtMTQ0MDU1NTUzNiwtMTA4NDc4
+OTA0MF19
 -->
