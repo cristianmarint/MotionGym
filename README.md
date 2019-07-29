@@ -1,5 +1,6 @@
 ![Laravel-shield][Laravel-shield]
 ![Voyager-shield][Voyager-shield]
+![Stage]
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -167,10 +168,11 @@ Project: [https://github.com/cristianmarint/MotionGym](https://github.com/cristi
 [license-shield]: https://img.shields.io/github/license/cristianmarint/MotionGym.svg?style=flat-square
 [Laravel-shield]: https://img.shields.io/badge/Laravel-5.8-f55247
 [Voyager-shield]: https://img.shields.io/badge/Voyager-1.2-22A7F0
+[Stage]: https://img.shields.io/badge/Stage-Pre%20Alpha-FFE525
 [license-url]: https://github.com/cristianmarint/MotionGym/blob/master/LICENSE.txt
 [product-screenshot]: docs/images/screenshot.png
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY5NDUzNTAsLTYwMjUxMDMwNSwyMDI2Nz
-A0MzA2LDMxNDQxMDI5OSwxNDI5MTQwNDk0LC0xNDQwNTU1NTM2
-LC0xMDg0Nzg5MDQwXX0=
+eyJoaXN0b3J5IjpbMjA0OTEwMjA4MSw0Njk0NTM1MCwtNjAyNT
+EwMzA1LDIwMjY3MDQzMDYsMzE0NDEwMjk5LDE0MjkxNDA0OTQs
+LTE0NDA1NTU1MzYsLTEwODQ3ODkwNDBdfQ==
 -->
