@@ -22,7 +22,7 @@ class UsersTableSeeder extends Seeder
                 'id' => 1,
                 'role_id' => 1,
                 'name' => 'Cristian Marin',
-                'email' => 'cristianmarint@motiongym.com',
+                'email' => 'cristianmarint@motion.gym',
                 'avatar' => 'users/default.png',
                 'email_verified_at' => '2019-07-24 21:28:15',
                 'password' => '$2y$10$hw4IBGx.OIwc6BRv1I9Rn.a9PhIdiwoIBpbR4MUIDSZEruV.Z5vhG',

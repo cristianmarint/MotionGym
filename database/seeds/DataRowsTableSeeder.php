@@ -383,7 +383,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 1,
                 'delete' => 0,
                 'details' => '{"validation":{"rule":"required|min:2|max:250"}}',
-                'order' => 3,
+                'order' => 4,
             ),
             23 => 
             array (
@@ -399,7 +399,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 1,
                 'delete' => 1,
                 'details' => '{"validation":{"rule":"max:1000"}}',
-                'order' => 4,
+                'order' => 5,
             ),
             24 => 
             array (
@@ -411,9 +411,9 @@ class DataRowsTableSeeder extends Seeder
                 'required' => 0,
                 'browse' => 0,
                 'read' => 0,
-                'edit' => 0,
-                'add' => 0,
-                'delete' => 0,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
                 'details' => '{}',
                 'order' => 2,
             ),
@@ -431,7 +431,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 5,
+                'order' => 6,
             ),
             26 => 
             array (
@@ -447,7 +447,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 6,
+                'order' => 7,
             ),
             27 => 
             array (
@@ -463,7 +463,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 7,
+                'order' => 8,
             ),
             28 => 
             array (
@@ -471,7 +471,7 @@ class DataRowsTableSeeder extends Seeder
                 'data_type_id' => 4,
                 'field' => 'category_hasmany_category_relationship',
                 'type' => 'relationship',
-                'display_name' => 'Categories',
+                'display_name' => 'Parent Categories',
                 'required' => 0,
                 'browse' => 1,
                 'read' => 1,
@@ -479,7 +479,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 1,
                 'delete' => 1,
                 'details' => '{"model":"App\\\\Models\\\\Category","table":"category","type":"belongsTo","column":"parent_category_id","key":"id","label":"name","pivot_table":"category","pivot":"0","taggable":"on"}',
-                'order' => 8,
+                'order' => 3,
             ),
             29 => 
             array (
@@ -559,7 +559,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 6,
+                'order' => 8,
             ),
             34 => 
             array (
@@ -575,7 +575,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 7,
+                'order' => 9,
             ),
             35 => 
             array (
@@ -591,7 +591,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 0,
                 'delete' => 0,
                 'details' => '{}',
-                'order' => 8,
+                'order' => 10,
             ),
             36 => 
             array (
@@ -639,7 +639,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 1,
                 'delete' => 0,
                 'details' => '{"validation":{"rule":"max:1000"}}',
-                'order' => 3,
+                'order' => 7,
             ),
             39 => 
             array (
@@ -655,7 +655,7 @@ class DataRowsTableSeeder extends Seeder
                 'add' => 1,
                 'delete' => 1,
                 'details' => '{"model":"App\\\\Models\\\\Category","table":"category","type":"belongsToMany","column":"id","key":"id","label":"name","pivot_table":"product_category","pivot":"1","taggable":"on"}',
-                'order' => 9,
+                'order' => 6,
             ),
             40 => 
             array (
@@ -1262,7 +1262,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => '{"validation":{"rule":"required|min:2|max:250"}}',
+                'details' => '{"validation":{"rule":"max:250"}}',
                 'order' => 10,
             ),
             78 => 
@@ -1326,7 +1326,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => '{"validation":{"rule":"before_or_equal:1900-01-01"}}',
+                'details' => '{"validation":{"rule":"after_or_equal:01-01-1900"}}',
                 'order' => 12,
             ),
             82 => 
@@ -1382,7 +1382,7 @@ class DataRowsTableSeeder extends Seeder
                 'id' => 87,
                 'data_type_id' => 10,
                 'field' => 'gender',
-                'type' => 'checkbox',
+                'type' => 'select_dropdown',
                 'display_name' => 'Gender',
                 'required' => 0,
                 'browse' => 0,
@@ -1390,7 +1390,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => '{"checked":false,"on":"Male","off":"Female","description":"We require this field because one of the many ways we use this information is in communicationg with the client insurance company. Please make sure you provide here is the same as what you insurance provider has on file."}',
+                'details' => '{"default":"unknown","options":{"unknown":"unknown","Female":"Female","Male":"Male"},"description":"We require this field because one of the many ways we use this information is in communicationg with the client insurance company. Please make sure you provide here is the same as what you insurance provider has on file."}',
                 'order' => 17,
             ),
             86 => 
@@ -1863,7 +1863,7 @@ class DataRowsTableSeeder extends Seeder
                 'data_type_id' => 14,
                 'field' => 'invoice_belongsto_person_relationship',
                 'type' => 'relationship',
-                'display_name' => 'Client',
+                'display_name' => 'Client ID',
                 'required' => 0,
                 'browse' => 1,
                 'read' => 1,
@@ -1886,7 +1886,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 0,
-                'details' => '{"model":"App\\\\User","table":"users","type":"belongsTo","column":"seller_user_id","key":"id","label":"avatar","pivot_table":"category","pivot":"0","taggable":"0"}',
+                'details' => '{"model":"App\\\\User","table":"users","type":"belongsTo","column":"seller_user_id","key":"id","label":"name","pivot_table":"category","pivot":"0","taggable":"0"}',
                 'order' => 12,
             ),
             117 => 

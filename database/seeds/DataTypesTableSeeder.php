@@ -87,7 +87,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 1,
                 'details' => '{"order_column":null,"order_display_column":"name","order_direction":"desc","default_search_key":"name","scope":null}',
                 'created_at' => '2019-07-24 22:03:09',
-                'updated_at' => '2019-07-26 04:58:43',
+                'updated_at' => '2019-07-28 19:16:55',
             ),
             4 => 
             array (
@@ -96,7 +96,7 @@ class DataTypesTableSeeder extends Seeder
                 'slug' => 'product',
                 'display_name_singular' => 'Product',
                 'display_name_plural' => 'Products',
-                'icon' => 'voyager-backpack',
+                'icon' => 'fas fa-gift',
                 'model_name' => 'App\\Models\\Product',
                 'policy_name' => NULL,
                 'controller' => NULL,
@@ -105,7 +105,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 1,
                 'details' => '{"order_column":null,"order_display_column":"name","order_direction":"desc","default_search_key":"name","scope":null}',
                 'created_at' => '2019-07-24 22:21:02',
-                'updated_at' => '2019-07-26 14:41:20',
+                'updated_at' => '2019-07-29 18:06:26',
             ),
             5 => 
             array (
@@ -195,7 +195,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 1,
                 'details' => '{"order_column":null,"order_display_column":"identification","order_direction":"desc","default_search_key":"identification","scope":null}',
                 'created_at' => '2019-07-25 14:38:25',
-                'updated_at' => '2019-07-26 13:12:52',
+                'updated_at' => '2019-07-29 18:14:51',
             ),
             10 => 
             array (
@@ -249,7 +249,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 1,
                 'details' => '{"order_column":null,"order_display_column":"id","order_direction":"desc","default_search_key":"id","scope":null}',
                 'created_at' => '2019-07-25 15:18:19',
-                'updated_at' => '2019-07-26 14:36:53',
+                'updated_at' => '2019-07-29 18:16:37',
             ),
             13 => 
             array (
