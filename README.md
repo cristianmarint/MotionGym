@@ -162,19 +162,19 @@ Project: [https://github.com/cristianmarint/MotionGym](https://github.com/cristi
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/cristianmarint/MotionGym.svg?style=flat-square
 [contributors-url]: https://github.com/cristianmarint/MotionGym/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/cristianmarint/MotionGym.svg?style=flat-square
 [forks-url]: https://github.com/cristianmarint/MotionGym/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
+[stars-shield]: https://img.shields.io/github/stars/cristianmarint/MotionGym.svg?style=flat-square
 [stars-url]: https://github.com/cristianmarint/MotionGym/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/cristianmarint/MotionGy,.svg?style=flat-square
 [issues-url]: https://github.com/cristianmarint/MotionGym/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
+[license-shield]: https://img.shields.io/github/license/cristianmarint/Best-README-Template.svg?style=flat-square
 [license-url]: https://github.com/cristianmarint/MotionGym/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [product-screenshot]: docs/images/screenshot.png
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDA1NTU1MzYsLTEwODQ3ODkwNDBdfQ
-==
+eyJoaXN0b3J5IjpbNzQ2ODU5ODU2LC0xNDQwNTU1NTM2LC0xMD
+g0Nzg5MDQwXX0=
 -->
