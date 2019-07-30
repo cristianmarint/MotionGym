@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 10:36:58
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-26 09:05:40
+ * @ Modified time: 2019-07-30 08:41:06
  * @ Description:
  */
 
@@ -27,7 +27,7 @@ class CreateDetailTable extends Migration
             $table->unsignedInteger('extra_id')->nullable();
             $table->unsignedInteger('product_id')->nullable();
             $table->unsignedInteger('invoice_id')->nullable();
-            $table->unsignedInteger('amount');
+            $table->unsignedInteger('amount')->default('1');
 
             
             $table->foreign('extra_id')->references('id')->on('extra')

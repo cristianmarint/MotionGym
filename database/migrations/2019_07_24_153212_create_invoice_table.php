@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 10:32:12
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-24 13:41:20
+ * @ Modified time: 2019-07-30 09:34:43
  * @ Description:
  */
 
@@ -28,7 +28,7 @@ class CreateInvoiceTable extends Migration
             $table->unsignedInteger('seller_user_id')->nullable();
             $table->unsignedInteger('payment_method_id')->nullable();
             $table->string('status',50)->nullable(true);
-            $table->float('total', 9, 5);
+            $table->float('total', 9, 5)->default('0')->nullable();
 
             
             $table->foreign('client_person_id')->references('id')->on('person')
