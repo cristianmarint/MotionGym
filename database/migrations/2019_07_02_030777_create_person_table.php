@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-01 22:06:07
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-25 22:43:40
+ * @ Modified time: 2019-07-31 16:14:04
  * @ Description:
  */
 
@@ -23,6 +23,7 @@ class CreatePersonTable extends Migration
     {
         Schema::create('person', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('status',50)->nullable(true);
             $table->string('identification', 50)->nullable(false);
             $table->string('identification_type', 50)->nullable();
             $table->string('photo', 500)->default(null)->nullable();          

@@ -123,7 +123,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 1,
                 'details' => '{"order_column":null,"order_display_column":"name","order_direction":"desc","default_search_key":"name","scope":null}',
                 'created_at' => '2019-07-24 22:42:46',
-                'updated_at' => '2019-07-26 14:37:56',
+                'updated_at' => '2019-07-31 21:11:54',
             ),
             6 => 
             array (
@@ -195,7 +195,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 1,
                 'details' => '{"order_column":null,"order_display_column":"identification","order_direction":"desc","default_search_key":"identification","scope":null}',
                 'created_at' => '2019-07-25 14:38:25',
-                'updated_at' => '2019-07-29 18:14:51',
+                'updated_at' => '2019-07-31 22:11:15',
             ),
             10 => 
             array (
@@ -243,13 +243,13 @@ class DataTypesTableSeeder extends Seeder
                 'icon' => 'voyager-buy',
                 'model_name' => 'App\\Models\\Invoice',
                 'policy_name' => NULL,
-                'controller' => NULL,
-                'description' => 'Here you can store each sell with the corresponding product, amount and discound.',
+                'controller' => 'App\\Http\\Controllers\\Voyager\\InvoiceController',
+                'description' => 'Here you can store each sell with the corresponding product, amount and discount.',
                 'generate_permissions' => 1,
                 'server_side' => 1,
                 'details' => '{"order_column":null,"order_display_column":"id","order_direction":"desc","default_search_key":"id","scope":null}',
                 'created_at' => '2019-07-25 15:18:19',
-                'updated_at' => '2019-07-29 18:16:37',
+                'updated_at' => '2019-07-31 15:49:01',
             ),
             13 => 
             array (
@@ -268,6 +268,24 @@ class DataTypesTableSeeder extends Seeder
                 'details' => '{"order_column":null,"order_display_column":"name","order_direction":"desc","default_search_key":"name","scope":null}',
                 'created_at' => '2019-07-26 04:26:09',
                 'updated_at' => '2019-07-26 14:45:19',
+            ),
+            14 => 
+            array (
+                'id' => 18,
+                'name' => 'detail',
+                'slug' => 'detail',
+                'display_name_singular' => 'Detail',
+                'display_name_plural' => 'Details',
+                'icon' => 'fas fa-file-invoice',
+                'model_name' => 'App\\Models\\Detail',
+                'policy_name' => NULL,
+                'controller' => 'App\\Http\\Controllers\\Voyager\\DetailController',
+                'description' => 'Here you can specify the product for a given invoice',
+                'generate_permissions' => 1,
+                'server_side' => 1,
+                'details' => '{"order_column":null,"order_display_column":"id","order_direction":"desc","default_search_key":"invoice_id","scope":null}',
+                'created_at' => '2019-07-30 14:47:08',
+                'updated_at' => '2019-07-31 19:36:47',
             ),
         ));
         

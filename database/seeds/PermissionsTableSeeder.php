@@ -697,6 +697,46 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2019-07-26 14:45:52',
                 'updated_at' => '2019-07-26 14:45:52',
             ),
+            85 => 
+            array (
+                'id' => 86,
+                'key' => 'browse_detail',
+                'table_name' => 'detail',
+                'created_at' => '2019-07-30 14:47:11',
+                'updated_at' => '2019-07-30 14:47:11',
+            ),
+            86 => 
+            array (
+                'id' => 87,
+                'key' => 'read_detail',
+                'table_name' => 'detail',
+                'created_at' => '2019-07-30 14:47:11',
+                'updated_at' => '2019-07-30 14:47:11',
+            ),
+            87 => 
+            array (
+                'id' => 88,
+                'key' => 'edit_detail',
+                'table_name' => 'detail',
+                'created_at' => '2019-07-30 14:47:11',
+                'updated_at' => '2019-07-30 14:47:11',
+            ),
+            88 => 
+            array (
+                'id' => 89,
+                'key' => 'add_detail',
+                'table_name' => 'detail',
+                'created_at' => '2019-07-30 14:47:11',
+                'updated_at' => '2019-07-30 14:47:11',
+            ),
+            89 => 
+            array (
+                'id' => 90,
+                'key' => 'delete_detail',
+                'table_name' => 'detail',
+                'created_at' => '2019-07-30 14:47:11',
+                'updated_at' => '2019-07-30 14:47:11',
+            ),
         ));
         
         

@@ -23,4 +23,5 @@ php artisan iseed person
 php artisan iseed product_category
 php artisan iseed refund
 php artisan iseed service
+php artisan iseed translations
 ``

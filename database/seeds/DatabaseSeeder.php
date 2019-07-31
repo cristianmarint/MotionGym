@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-01 20:57:41
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-26 10:02:14
+ * @ Modified time: 2019-07-31 17:36:12
  * @ Description:
  */
 
@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
     {
         
         
-        // Basic Settings & Dummy data (DO NOT USE VOYAGER ONES DUE LOSE IN DATA)
+        // Basic Settings & Dummy data (DO NOT USE VOYAGER ONES DUE TO LOSE IN DATA)
         $this->call(DataTypesTableSeeder::class);
         $this->call(DataRowsTableSeeder::class);
         $this->call(MenusTableSeeder::class);
@@ -33,17 +33,18 @@ class DatabaseSeeder extends Seeder
         $this->call(UsersTableSeeder::class);
         $this->call(UserRolesTableSeeder::class);
         $this->call(ProductTableSeeder::class);
-        $this->call(InvoiceTableSeeder::class);
-        $this->call(DetailTableSeeder::class);
+        $this->call(PaymentMethodTableSeeder::class);
         $this->call(ExtraTableSeeder::class);
         $this->call(CategoryTableSeeder::class);
         $this->call(StateTableSeeder::class);
         $this->call(CityTableSeeder::class);
         $this->call(InsuranceCompanyTableSeeder::class);
-        $this->call(PaymentMethodTableSeeder::class);
         $this->call(PersonTableSeeder::class);
+        $this->call(InvoiceTableSeeder::class);
+        $this->call(DetailTableSeeder::class);
         $this->call(ProductCategoryTableSeeder::class);
         $this->call(RefundTableSeeder::class);
         $this->call(ServiceTableSeeder::class);
+        $this->call(TranslationsTableSeeder::class);
     }
 }

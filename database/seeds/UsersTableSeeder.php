@@ -25,8 +25,8 @@ class UsersTableSeeder extends Seeder
                 'email' => 'cristianmarint@motion.gym',
                 'avatar' => 'users/default.png',
                 'email_verified_at' => '2019-07-24 21:28:15',
-                'password' => '$2y$10$hw4IBGx.OIwc6BRv1I9Rn.a9PhIdiwoIBpbR4MUIDSZEruV.Z5vhG',//123456789
-                'remember_token' => NULL,
+                'password' => '$2y$10$hw4IBGx.OIwc6BRv1I9Rn.a9PhIdiwoIBpbR4MUIDSZEruV.Z5vhG',
+                'remember_token' => 'ZtYRIOLsxY516yz44IK3iw8eiTGy9YBNjlJWElaCXOSgFwXzGtt7OVaaBQ4l',
                 'settings' => NULL,
                 'deleted_at' => NULL,
                 'created_at' => '2019-07-24 21:28:15',

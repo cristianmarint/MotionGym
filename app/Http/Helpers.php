@@ -1,4 +1,12 @@
 <?php
+/**
+ * @ Author: @CristianMarinT
+ * @ Create Time: 2019-07-30 9:05:28
+ * @ Modified by: @CristianMarinT
+ * @ Modified time: 2019-07-31 17:36:20
+ * @ Description:
+ */
+
     namespace App\Http;
 
     use App\Models\Product;
