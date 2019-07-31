@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-26 14:50:19
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-31 14:37:32
+ * @ Modified time: 2019-07-31 15:16:54
  * @ Description:
  */
 
@@ -443,10 +443,11 @@ class DetailController extends VoyagerBaseController
         
         $res = $data->destroy($ids);
         
-        $ele=Detail::withTrashed()->select('invoice_id')->where('detail.id',$id)->first();
-        // dd($ele->invoice_id);
-        Helpers::updateTotalInvoice($ele->invoice_id);
-        Helpers::updateAmountProduct($id);
+        foreach ($ids as $id) {
+            $ele=Detail::withTrashed()->select('invoice_id')->where('detail.id',$id)->first();
+            Helpers::updateTotalInvoice($ele->invoice_id);
+            Helpers::updateAmountProduct($id);
+        }
         
         $data = $res
         ? [
