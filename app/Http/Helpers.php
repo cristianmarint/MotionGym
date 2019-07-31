@@ -28,16 +28,16 @@
                 $total += ($key->sale_price * $key->amount);
             }
             $totalPay = $total;
-
-            if(isset($extras->percentage)){
+            // dd($extras);
+            if($extras->count() > 0 ){
                 foreach ($extras as $key ) {
-                    $extraTotal += $key->percentage;
+                    $extraTotal = $extraTotal + $key->percentage;
                 }
-                $totalPay = ($total * abs($extraTotal/100));
+                $totalPay = $total - ($total * abs($extraTotal/100));
             }
 
-            // dd('total ('.$total.') |  extraTotal ('.$extraTotal.') |  totalPay ('.$totalPay.')');
             Invoice::where('id',$id)->update(['total'=>$totalPay]);
+            // dd('total ('.$total.') |  extraTotal ('.$extraTotal.') |  totalPay ('.$totalPay.')');
         }
 
 
