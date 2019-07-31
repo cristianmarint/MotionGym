@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-26 14:50:19
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-31 15:16:54
+ * @ Modified time: 2019-07-31 16:01:46
  * @ Description:
  */
 
@@ -303,12 +303,13 @@ class DetailController extends VoyagerBaseController
 
         // dd($request);
         Helpers::updateAmountProduct($id,$request->product_id,$request->amount);
-        Helpers::updateTotalInvoice($request->invoice_id);
         
         // Validate fields with ajax
         $val = $this->validateBread($request->all(), $dataType->editRows, $dataType->name, $id)->validate();
         $this->insertUpdateData($request, $slug, $dataType->editRows, $data);
-
+        
+        Helpers::updateTotalInvoice($request->invoice_id);
+    
         event(new BreadDataUpdated($dataType, $data));
 
         return redirect()
