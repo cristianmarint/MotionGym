@@ -12,6 +12,7 @@ class Extra extends Model
     use SoftDeletes;
 
     protected $fillable = [
+        'id',
         'name',
         'description',
         'percentage'

@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 15:50:57
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-28 14:24:20
+ * @ Modified time: 2019-07-31 12:48:25
  * @ Description:
  */
 
@@ -20,6 +20,7 @@ class Product extends Model
     use SoftDeletes;
 
     protected $fillable = [
+        'id',
         'category_id',
         'name',
         'description',
