@@ -291,12 +291,17 @@ class MembershipController extends VoyagerBaseController
         // Check permission
         $this->authorize('edit', $data);
 
-        
+
         // Validate fields with ajax
         $val = $this->validateBread($request->all(), $dataType->editRows, $dataType->name, $id)->validate();
-        $this->insertUpdateData($request, $slug, $dataType->editRows, $data);
-        
+        $this->insertUpdateData($request, $slug, $dataType->editRows, $data);      
+
+
+        if(Helpers::removeDayFromDate($request->month) >= date("Y-m")){
+            Helpers::setPersonStatusActive($request->person_id);
+        }
         Helpers::updateTotalInvoice($request->invoice_id);
+
 
         event(new BreadDataUpdated($dataType, $data));
 

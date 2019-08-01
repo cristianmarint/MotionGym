@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-30 9:05:28
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-31 22:47:49
+ * @ Modified time: 2019-08-01 09:46:20
  * @ Description:
  */
 
@@ -13,6 +13,7 @@
     use App\Models\Detail;
     use App\Models\Invoice;
     use App\Models\Membership;
+    use App\Models\Person;
 
     use Illuminate\Http\Request;
 
@@ -132,10 +133,37 @@
             
             Product::where('id',$currentInventory->id)->update(['amount'=>$finalAmount]);
         }
-        
-        
-        public static function removeDayFromDate(Request $request){
-            return date("Y-m",strtotime($request->month));
+
+        /**
+         * For e given date("Y-m-d") returns date("Y-m")
+         *
+         * @param Request $request
+         * @return void
+         */
+        public static function removeDayFromDate($date){
+            return date("Y-m",strtotime($date));
+        }
+
+
+
+        /**
+         * Set status Active for a given Person
+         *
+         * @param Request $request
+         * @return Request
+         */
+        public static function setPersonStatusActive($id){
+            Person::where('id',$id)->update(['status'=>'Active']);
+        }
+
+        /**
+         * Set status Inactive for a given Person
+         *
+         * @param Request $request
+         * @return Request
+         */
+        public static function setPersonStatusInactive($id){
+            Person::where('id',$id)->update(['status'=>'Inactive']);
         }
 
 
