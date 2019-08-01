@@ -1,23 +1,21 @@
-@extends('layouts.app')
+@extends('voyager::master')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+<div class="page-content">
+        @include('voyager::alerts')
+        @include('voyager::dimmers')
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
 
-                    You are logged in!
+        {{-- Idealmente esta validacion se deberia de hacer basado en un permiso de acceso de un determinado rol a un menu --}}
+        @if(Auth::check())
+            @if (Auth::user()->hasRole('admin') || Auth::user()->hasRole('encargado'))
+            {{-- Inicio Dashboard Admin --}}
+                <div class="analytics-container">
+                    <div class="Titles">
+                        <p class="text-center h2">Hola {{ Auth::user()->name}}, estas en Home.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
+                @endif
+            @endif
 </div>
 @endsection
