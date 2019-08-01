@@ -15,6 +15,6 @@ class Service extends Model
         'name',
         'photo',
         'description',
-        'precio'
+        'price'
     ];
 }
