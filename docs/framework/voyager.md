@@ -24,4 +24,5 @@ php artisan iseed product_category
 php artisan iseed refund
 php artisan iseed service
 php artisan iseed translations
+php artisan iseed membership
 ``

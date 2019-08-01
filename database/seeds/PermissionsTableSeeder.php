@@ -737,6 +737,46 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2019-07-30 14:47:11',
                 'updated_at' => '2019-07-30 14:47:11',
             ),
+            90 => 
+            array (
+                'id' => 91,
+                'key' => 'browse_membership',
+                'table_name' => 'membership',
+                'created_at' => '2019-08-01 00:57:21',
+                'updated_at' => '2019-08-01 00:57:21',
+            ),
+            91 => 
+            array (
+                'id' => 92,
+                'key' => 'read_membership',
+                'table_name' => 'membership',
+                'created_at' => '2019-08-01 00:57:21',
+                'updated_at' => '2019-08-01 00:57:21',
+            ),
+            92 => 
+            array (
+                'id' => 93,
+                'key' => 'edit_membership',
+                'table_name' => 'membership',
+                'created_at' => '2019-08-01 00:57:21',
+                'updated_at' => '2019-08-01 00:57:21',
+            ),
+            93 => 
+            array (
+                'id' => 94,
+                'key' => 'add_membership',
+                'table_name' => 'membership',
+                'created_at' => '2019-08-01 00:57:21',
+                'updated_at' => '2019-08-01 00:57:21',
+            ),
+            94 => 
+            array (
+                'id' => 95,
+                'key' => 'delete_membership',
+                'table_name' => 'membership',
+                'created_at' => '2019-08-01 00:57:21',
+                'updated_at' => '2019-08-01 00:57:21',
+            ),
         ));
         
         

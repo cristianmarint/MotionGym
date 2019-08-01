@@ -47,6 +47,16 @@ class ExtraTableSeeder extends Seeder
                 'created_at' => '2019-07-31 20:37:58',
                 'updated_at' => '2019-07-31 20:38:16',
             ),
+            3 => 
+            array (
+                'id' => 4,
+                'name' => 'None',
+                'description' => NULL,
+                'percentage' => 0,
+                'deleted_at' => NULL,
+                'created_at' => '2019-08-01 03:03:37',
+                'updated_at' => '2019-08-01 03:03:37',
+            ),
         ));
         
         

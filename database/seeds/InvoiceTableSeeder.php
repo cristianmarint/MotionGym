@@ -27,7 +27,7 @@ class InvoiceTableSeeder extends Seeder
                 'total' => 1687.5,
                 'deleted_at' => NULL,
                 'created_at' => '2019-06-28 00:00:00',
-                'updated_at' => '2019-07-31 21:07:49',
+                'updated_at' => '2019-08-01 03:43:04',
             ),
             1 => 
             array (
@@ -36,10 +36,10 @@ class InvoiceTableSeeder extends Seeder
                 'seller_user_id' => 1,
                 'payment_method_id' => NULL,
                 'status' => '1',
-                'total' => 300.0,
+                'total' => 0.0,
                 'deleted_at' => NULL,
                 'created_at' => '2019-07-28 00:00:00',
-                'updated_at' => '2019-07-31 21:09:40',
+                'updated_at' => '2019-08-01 03:42:44',
             ),
             2 => 
             array (
@@ -76,6 +76,18 @@ class InvoiceTableSeeder extends Seeder
                 'deleted_at' => NULL,
                 'created_at' => '2019-07-30 13:34:43',
                 'updated_at' => '2019-07-31 21:09:17',
+            ),
+            5 => 
+            array (
+                'id' => 6,
+                'client_person_id' => NULL,
+                'seller_user_id' => NULL,
+                'payment_method_id' => NULL,
+                'status' => '1',
+                'total' => 75.0,
+                'deleted_at' => NULL,
+                'created_at' => '2019-08-01 01:59:17',
+                'updated_at' => '2019-08-01 15:18:27',
             ),
         ));
         

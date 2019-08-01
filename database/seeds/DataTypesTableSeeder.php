@@ -123,7 +123,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 1,
                 'details' => '{"order_column":null,"order_display_column":"name","order_direction":"desc","default_search_key":"name","scope":null}',
                 'created_at' => '2019-07-24 22:42:46',
-                'updated_at' => '2019-07-31 21:11:54',
+                'updated_at' => '2019-08-01 03:03:28',
             ),
             6 => 
             array (
@@ -195,7 +195,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 1,
                 'details' => '{"order_column":null,"order_display_column":"identification","order_direction":"desc","default_search_key":"identification","scope":null}',
                 'created_at' => '2019-07-25 14:38:25',
-                'updated_at' => '2019-07-31 22:11:15',
+                'updated_at' => '2019-08-01 01:19:36',
             ),
             10 => 
             array (
@@ -249,7 +249,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 1,
                 'details' => '{"order_column":null,"order_display_column":"id","order_direction":"desc","default_search_key":"id","scope":null}',
                 'created_at' => '2019-07-25 15:18:19',
-                'updated_at' => '2019-07-31 15:49:01',
+                'updated_at' => '2019-08-01 01:59:51',
             ),
             13 => 
             array (
@@ -267,7 +267,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 1,
                 'details' => '{"order_column":null,"order_display_column":"name","order_direction":"desc","default_search_key":"name","scope":null}',
                 'created_at' => '2019-07-26 04:26:09',
-                'updated_at' => '2019-07-26 14:45:19',
+                'updated_at' => '2019-08-01 19:10:39',
             ),
             14 => 
             array (
@@ -286,6 +286,24 @@ class DataTypesTableSeeder extends Seeder
                 'details' => '{"order_column":null,"order_display_column":"id","order_direction":"desc","default_search_key":"invoice_id","scope":null}',
                 'created_at' => '2019-07-30 14:47:08',
                 'updated_at' => '2019-07-31 19:36:47',
+            ),
+            15 => 
+            array (
+                'id' => 19,
+                'name' => 'membership',
+                'slug' => 'membership',
+                'display_name_singular' => 'Membership',
+                'display_name_plural' => 'Memberships',
+                'icon' => 'fas fa-dumbbell',
+                'model_name' => 'App\\Models\\Membership',
+                'policy_name' => NULL,
+                'controller' => 'App\\Http\\Controllers\\Voyager\\MembershipController',
+                'description' => 'Here you can store a payment for the monthly membership',
+                'generate_permissions' => 1,
+                'server_side' => 1,
+                'details' => '{"order_column":null,"order_display_column":"id","order_direction":"desc","default_search_key":"invoice_id","scope":null}',
+                'created_at' => '2019-08-01 00:57:21',
+                'updated_at' => '2019-08-01 03:02:08',
             ),
         ));
         

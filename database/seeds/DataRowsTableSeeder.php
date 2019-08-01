@@ -718,7 +718,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => '{"validation":{"rule":"required|numeric|min:1|max:100"}}',
+                'details' => '{"validation":{"rule":"required|numeric|min:0|max:100"}}',
                 'order' => 4,
             ),
             44 => 
@@ -1800,7 +1800,7 @@ class DataRowsTableSeeder extends Seeder
                 'field' => 'total',
                 'type' => 'text',
                 'display_name' => 'Total',
-                'required' => 1,
+                'required' => 0,
                 'browse' => 1,
                 'read' => 1,
                 'edit' => 0,
@@ -1950,7 +1950,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => '{"quality":"70%"}',
+                'details' => '{"quality":"50%","max":"5000","validation":{"rule":"max:5000"}}',
                 'order' => 3,
             ),
             121 => 
@@ -1971,22 +1971,6 @@ class DataRowsTableSeeder extends Seeder
             ),
             122 => 
             array (
-                'id' => 124,
-                'data_type_id' => 17,
-                'field' => 'precio',
-                'type' => 'number',
-                'display_name' => 'Precio',
-                'required' => 1,
-                'browse' => 1,
-                'read' => 1,
-                'edit' => 1,
-                'add' => 1,
-                'delete' => 1,
-                'details' => '{"validation":{"rule":"numeric|min:0|max:999.999.999,999"},"default":"0"}',
-                'order' => 5,
-            ),
-            123 => 
-            array (
                 'id' => 125,
                 'data_type_id' => 17,
                 'field' => 'deleted_at',
@@ -2001,7 +1985,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 6,
             ),
-            124 => 
+            123 => 
             array (
                 'id' => 126,
                 'data_type_id' => 17,
@@ -2017,7 +2001,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 7,
             ),
-            125 => 
+            124 => 
             array (
                 'id' => 127,
                 'data_type_id' => 17,
@@ -2033,7 +2017,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 8,
             ),
-            126 => 
+            125 => 
             array (
                 'id' => 128,
                 'data_type_id' => 1,
@@ -2049,7 +2033,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"model":"App\\\\Models\\\\Person","table":"person","type":"belongsTo","column":"person_id","key":"id","label":"identification","pivot_table":"category","pivot":"0","taggable":"0"}',
                 'order' => 11,
             ),
-            127 => 
+            126 => 
             array (
                 'id' => 129,
                 'data_type_id' => 1,
@@ -2065,7 +2049,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 8,
             ),
-            128 => 
+            127 => 
             array (
                 'id' => 130,
                 'data_type_id' => 1,
@@ -2081,7 +2065,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 14,
             ),
-            129 => 
+            128 => 
             array (
                 'id' => 131,
                 'data_type_id' => 1,
@@ -2097,7 +2081,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 3,
             ),
-            130 => 
+            129 => 
             array (
                 'id' => 132,
                 'data_type_id' => 18,
@@ -2113,7 +2097,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 5,
             ),
-            131 => 
+            130 => 
             array (
                 'id' => 133,
                 'data_type_id' => 18,
@@ -2129,7 +2113,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 1,
             ),
-            132 => 
+            131 => 
             array (
                 'id' => 134,
                 'data_type_id' => 18,
@@ -2145,7 +2129,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 2,
             ),
-            133 => 
+            132 => 
             array (
                 'id' => 135,
                 'data_type_id' => 18,
@@ -2161,7 +2145,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 3,
             ),
-            134 => 
+            133 => 
             array (
                 'id' => 136,
                 'data_type_id' => 18,
@@ -2177,7 +2161,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"validation":{"rule":"required|numeric|min:1"}}',
                 'order' => 7,
             ),
-            135 => 
+            134 => 
             array (
                 'id' => 137,
                 'data_type_id' => 18,
@@ -2193,7 +2177,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 9,
             ),
-            136 => 
+            135 => 
             array (
                 'id' => 138,
                 'data_type_id' => 18,
@@ -2209,7 +2193,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 10,
             ),
-            137 => 
+            136 => 
             array (
                 'id' => 139,
                 'data_type_id' => 18,
@@ -2225,7 +2209,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 11,
             ),
-            138 => 
+            137 => 
             array (
                 'id' => 140,
                 'data_type_id' => 18,
@@ -2241,7 +2225,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"model":"App\\\\Models\\\\Invoice","table":"invoice","type":"belongsTo","column":"invoice_id","key":"id","label":"id","pivot_table":"category","pivot":"0","taggable":"0"}',
                 'order' => 4,
             ),
-            139 => 
+            138 => 
             array (
                 'id' => 141,
                 'data_type_id' => 18,
@@ -2257,7 +2241,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"model":"App\\\\Models\\\\Product","table":"product","type":"belongsTo","column":"product_id","key":"id","label":"name","pivot_table":"category","pivot":"0","taggable":"0"}',
                 'order' => 6,
             ),
-            140 => 
+            139 => 
             array (
                 'id' => 142,
                 'data_type_id' => 18,
@@ -2273,7 +2257,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"model":"App\\\\Models\\\\Extra","table":"extra","type":"belongsTo","column":"extra_id","key":"id","label":"name","pivot_table":"category","pivot":"0","taggable":"0"}',
                 'order' => 8,
             ),
-            141 => 
+            140 => 
             array (
                 'id' => 143,
                 'data_type_id' => 14,
@@ -2289,7 +2273,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"model":"App\\\\Models\\\\Payment_method","table":"payment_method","type":"belongsTo","column":"payment_method_id","key":"id","label":"name","pivot_table":"category","pivot":"0","taggable":"0"}',
                 'order' => 10,
             ),
-            142 => 
+            141 => 
             array (
                 'id' => 144,
                 'data_type_id' => 10,
@@ -2304,6 +2288,246 @@ class DataRowsTableSeeder extends Seeder
                 'delete' => 1,
                 'details' => '{"default":"Active","options":{"Active":"Active","Inactive":"Inactive"}}',
                 'order' => 4,
+            ),
+            142 => 
+            array (
+                'id' => 145,
+                'data_type_id' => 19,
+                'field' => 'id',
+                'type' => 'text',
+                'display_name' => 'Id',
+                'required' => 1,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '{}',
+                'order' => 1,
+            ),
+            143 => 
+            array (
+                'id' => 146,
+                'data_type_id' => 19,
+                'field' => 'person_id',
+                'type' => 'text',
+                'display_name' => 'Person Id',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 0,
+                'details' => '{}',
+                'order' => 2,
+            ),
+            144 => 
+            array (
+                'id' => 147,
+                'data_type_id' => 19,
+                'field' => 'invoice_id',
+                'type' => 'text',
+                'display_name' => 'Invoice Id',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 0,
+                'details' => '{}',
+                'order' => 3,
+            ),
+            145 => 
+            array (
+                'id' => 148,
+                'data_type_id' => 19,
+                'field' => 'extra_id',
+                'type' => 'text',
+                'display_name' => 'Extra Id',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{}',
+                'order' => 4,
+            ),
+            146 => 
+            array (
+                'id' => 149,
+                'data_type_id' => 19,
+                'field' => 'month',
+                'type' => 'date',
+                'display_name' => 'Month',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 0,
+                'details' => '{"validation":{"rule":"after_or_equal:01-01-2019"}}',
+                'order' => 7,
+            ),
+            147 => 
+            array (
+                'id' => 150,
+                'data_type_id' => 19,
+                'field' => 'deleted_at',
+                'type' => 'timestamp',
+                'display_name' => 'Deleted At',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '{}',
+                'order' => 10,
+            ),
+            148 => 
+            array (
+                'id' => 151,
+                'data_type_id' => 19,
+                'field' => 'created_at',
+                'type' => 'timestamp',
+                'display_name' => 'Created At',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '{}',
+                'order' => 11,
+            ),
+            149 => 
+            array (
+                'id' => 152,
+                'data_type_id' => 19,
+                'field' => 'updated_at',
+                'type' => 'timestamp',
+                'display_name' => 'Updated At',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '{}',
+                'order' => 12,
+            ),
+            150 => 
+            array (
+                'id' => 153,
+                'data_type_id' => 19,
+                'field' => 'membership_belongsto_person_relationship',
+                'type' => 'relationship',
+                'display_name' => 'Person ID',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{"model":"App\\\\Models\\\\Person","table":"person","type":"belongsTo","column":"person_id","key":"id","label":"identification","pivot_table":"category","pivot":"0","taggable":"0"}',
+                'order' => 5,
+            ),
+            151 => 
+            array (
+                'id' => 154,
+                'data_type_id' => 14,
+                'field' => 'invoice_hasone_membership_relationship',
+                'type' => 'relationship',
+                'display_name' => 'membership',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '{"model":"App\\\\Models\\\\Membership","table":"membership","type":"hasOne","column":"invoice_id","key":"id","label":"month","pivot_table":"category","pivot":"0","taggable":"0"}',
+                'order' => 14,
+            ),
+            152 => 
+            array (
+                'id' => 155,
+                'data_type_id' => 19,
+                'field' => 'price',
+                'type' => 'number',
+                'display_name' => 'Price',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 0,
+                'details' => '{"validation":{"rule":"numeric|min:0|max:999.999.999,999"},"default":"0"}',
+                'order' => 8,
+            ),
+            153 => 
+            array (
+                'id' => 156,
+                'data_type_id' => 19,
+                'field' => 'membership_belongsto_invoice_relationship',
+                'type' => 'relationship',
+                'display_name' => 'Invoice number',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{"model":"App\\\\Models\\\\Invoice","table":"invoice","type":"belongsTo","column":"invoice_id","key":"id","label":"id","pivot_table":"category","pivot":"0","taggable":"0"}',
+                'order' => 6,
+            ),
+            154 => 
+            array (
+                'id' => 157,
+                'data_type_id' => 19,
+                'field' => 'membership_belongsto_extra_relationship',
+                'type' => 'relationship',
+                'display_name' => 'Discount',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{"model":"App\\\\Models\\\\Extra","table":"extra","type":"belongsTo","column":"extra_id","key":"id","label":"name","pivot_table":"category","pivot":"0","taggable":"0"}',
+                'order' => 9,
+            ),
+            155 => 
+            array (
+                'id' => 158,
+                'data_type_id' => 10,
+                'field' => 'person_hasone_membership_relationship',
+                'type' => 'relationship',
+                'display_name' => 'Memberships',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '{"model":"App\\\\Models\\\\Membership","table":"membership","type":"hasOne","column":"person_id","key":"id","label":"month","pivot_table":"category","pivot":"0","taggable":"0"}',
+                'order' => 24,
+            ),
+            156 => 
+            array (
+                'id' => 159,
+                'data_type_id' => 17,
+                'field' => 'price',
+                'type' => 'text',
+                'display_name' => 'Price',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '{"validation":{"rule":"numeric|min:0|max:999.999.999,999"},"default":"0"}',
+                'order' => 5,
             ),
         ));
         
