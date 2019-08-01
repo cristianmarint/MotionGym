@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 15:22:12
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-28 14:24:05
+ * @ Modified time: 2019-07-31 19:55:01
  * @ Description:
  */
 
@@ -37,6 +37,21 @@ class Person extends Model
         'gender'
     ];
 
+    public function user()
+    {
+        return $this->hasOne('App\User');
+    }
+
+    public function invoice()
+    {
+        return $this->hasOne('Invoice');
+    }
+
+    public function membership()
+    {
+        return $this->hasOne('Membership');
+    }
+    
     public function insurance_company()
     {
         return $this->belongsTo('Insurance_company');
@@ -47,13 +62,4 @@ class Person extends Model
         return $this->belongsTo('City');
     }
 
-    public function user()
-    {
-        return $this->hasOne('App\User');
-    }
-
-    public function invoice()
-    {
-        return $this->hasOne('Invoice');
-    }
 }

@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-01 20:57:41
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-31 17:36:12
+ * @ Modified time: 2019-07-31 19:50:23
  * @ Description:
  */
 
@@ -45,6 +45,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ProductCategoryTableSeeder::class);
         $this->call(RefundTableSeeder::class);
         $this->call(ServiceTableSeeder::class);
+        $this->call(MembershipTableSeeder::class);
         $this->call(TranslationsTableSeeder::class);
     }
 }

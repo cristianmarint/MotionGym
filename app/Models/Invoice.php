@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-24 15:26:17
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-28 16:42:45
+ * @ Modified time: 2019-07-31 19:54:23
  * @ Description:
  */
 
@@ -31,6 +31,11 @@ class Invoice extends Model
     public function detail()
     {
         return $this->hasOne('Detail');
+    }
+
+    public function membership()
+    {
+        return $this->hasOne('Membership');
     }
 
     public function client_person()

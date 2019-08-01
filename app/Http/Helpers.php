@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-30 9:05:28
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-31 17:36:20
+ * @ Modified time: 2019-07-31 22:47:49
  * @ Description:
  */
 
@@ -12,7 +12,9 @@
     use App\Models\Product;
     use App\Models\Detail;
     use App\Models\Invoice;
+    use App\Models\Membership;
 
+    use Illuminate\Http\Request;
 
     class Helpers
     {
@@ -23,29 +25,65 @@
          * @return void
          */
         public static function updateTotalInvoice($id){
+
+            // Products
             $products  = Detail::select('detail.amount','product.sale_price')
                         ->join('product','detail.product_id','=','product.id')
                         ->where('detail.invoice_id',$id)->get();
-
-            $extras     = Detail::select('extra.percentage','extra.name')
+        $extrasDetail  = Detail::select('extra.percentage','extra.name')
                         ->join('extra','detail.extra_id','=','extra.id')
                         ->where('detail.invoice_id',$id)->get();
+
+
+            // Memberships
+            $memberships = Membership::select('price')
+                        ->where('invoice_id',$id)->get();
+     $extrasMembership  = Membership::select('extra.percentage')
+                        ->join('extra','membership.extra_id','=','extra.id')
+                        ->where('membership.invoice_id',$id)->get();
+
+
+
+
+                        
+
             
-            $total = 0;$extraTotal = 0;$totalPay=0;
+            $total = 0;
+            $extraTotal = 0;
+            $totalPay = 0;
             foreach ($products as $key ) {
                 $total += ($key->sale_price * $key->amount);
             }
-            $totalPay = $total;
-            // dd($extras);
-            if($extras->count() > 0 ){
-                foreach ($extras as $key ) {
+
+
+            if($memberships->isNotEmpty()){
+                foreach ($memberships as $key ) {
+                    $total += ($key->price);
+                }
+                if($extrasMembership->isNotEmpty()){
+                    foreach ($extrasMembership as $key ) {
+                        $extraTotal = $extraTotal + $key->percentage;
+                    }
+                    $totalPay = $total - ($total * abs($extraTotal/100));
+                }else {
+                    $totalPay = $total;                
+                }
+            }else{
+                $totalPay = $total;                
+            }
+
+                        
+            if($extrasDetail->count()>0){
+                foreach ($extrasDetail as $key ) {
                     $extraTotal = $extraTotal + $key->percentage;
                 }
                 $totalPay = $total - ($total * abs($extraTotal/100));
             }
 
+
+
             Invoice::where('id',$id)->update(['total'=>$totalPay]);
-            // dd('total ('.$total.') |  extraTotal ('.$extraTotal.') |  totalPay ('.$totalPay.')');
+            //dd('total ('.$total.') |  extraTotal ('.$extraTotal.') |  totalPay ('.$totalPay.')');
         }
 
 
@@ -94,5 +132,13 @@
             
             Product::where('id',$currentInventory->id)->update(['amount'=>$finalAmount]);
         }
-    }  
+        
+        
+        public static function removeDayFromDate(Request $request){
+            return date("Y-m",strtotime($request->month));
+        }
+
+
+
+    }
 ?>

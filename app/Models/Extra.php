@@ -22,4 +22,9 @@ class Extra extends Model
     {
         return $this->hasOne('Detail');
     }
+
+    public function membership()
+    {
+        return $this->hasOne('Membership');
+    }
 }
