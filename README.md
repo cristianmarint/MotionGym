@@ -171,7 +171,7 @@ Project: [https://github.com/cristianmarint/MotionGym](https://github.com/cristi
 [Voyager-shield]: https://img.shields.io/badge/Voyager-1.2-22A7F0
 [Stage]: https://img.shields.io/badge/Stage-Pre%20Alpha-FFE525
 [license-url]: https://github.com/cristianmarint/MotionGym/blob/master/LICENSE.txt
-[landing-page]: docs/imgs/Landing_page.gif
+[landing-page]: docs/imgs/Landing_page.gif =1920x
 [login-admin]: docs/imgs/Login_admin.gif
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTIwMzE0MTI2NDMsMjA0OTEwMjA4MSw0Nj
