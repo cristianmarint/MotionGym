@@ -53,7 +53,7 @@ A open source gym management system build.
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Landing page][landing-page]](https://github.com/cristianmarint/MotionGym)
+[![Landing page][landing-page]](https://github.com/cristianmarint/MotionGym =1920x)
 
 There are many of gym management systems instead of using one of those I decided to build one with Laravel 5.8 using the package Voyager 1.2 to make the proccess quicker and easier for basic operations (BREAD).  
 <br>
