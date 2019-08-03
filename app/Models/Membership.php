@@ -12,6 +12,8 @@ class Membership extends Model
     protected $table = 'membership';
     
     protected $fillable = [
+        'person_id',
+        'invoice_id',
         'month',
         'price'
     ];

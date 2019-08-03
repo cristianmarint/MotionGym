@@ -189,13 +189,13 @@ class DataTypesTableSeeder extends Seeder
                 'icon' => 'fas fa-users',
                 'model_name' => 'App\\Models\\Person',
                 'policy_name' => NULL,
-                'controller' => NULL,
+                'controller' => 'App\\Http\\Controllers\\Voyager\\PersonController',
                 'description' => 'Here you can store all of your clients and additional user information.',
                 'generate_permissions' => 1,
                 'server_side' => 1,
                 'details' => '{"order_column":null,"order_display_column":"identification","order_direction":"desc","default_search_key":"identification","scope":null}',
                 'created_at' => '2019-07-25 14:38:25',
-                'updated_at' => '2019-08-01 01:19:36',
+                'updated_at' => '2019-08-03 17:13:50',
             ),
             10 => 
             array (

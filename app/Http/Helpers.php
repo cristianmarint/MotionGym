@@ -3,7 +3,7 @@
  * @ Author: @CristianMarinT
  * @ Create Time: 2019-07-30 9:05:28
  * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-08-01 09:46:20
+ * @ Modified time: 2019-08-03 12:48:55
  * @ Description:
  */
 
@@ -15,8 +15,12 @@
     use App\Models\Membership;
     use App\Models\Person;
 
+    use Illuminate\Support\Collection;
+
     use Illuminate\Http\Request;
 
+    use Illuminate\Support\Facades\Auth; 
+    
     class Helpers
     {
         /**
@@ -133,11 +137,11 @@
             
             Product::where('id',$currentInventory->id)->update(['amount'=>$finalAmount]);
         }
-
+        
         /**
          * For e given date("Y-m-d") returns date("Y-m")
          *
-         * @param Request $request
+         * @param [date] $date
          * @return void
          */
         public static function removeDayFromDate($date){
@@ -147,25 +151,90 @@
 
 
         /**
-         * Set status Active for a given Person
-         *
-         * @param Request $request
-         * @return Request
-         */
+        * Set status Active for a given Person id
+        *
+        * @param [App/Models/Person] $id
+        * @return void
+        */
         public static function setPersonStatusActive($id){
             Person::where('id',$id)->update(['status'=>'Active']);
         }
 
         /**
-         * Set status Inactive for a given Person
+         * Set status Inactive for a given Person id
          *
-         * @param Request $request
-         * @return Request
+         * @param [App/Models/Person] $id
+         * @return void
          */
         public static function setPersonStatusInactive($id){
             Person::where('id',$id)->update(['status'=>'Inactive']);
         }
 
+
+        
+       
+        /**
+         * Create a new memberchip invoice for a given Person id or all for the current month
+         * For the membership price,it will use the default value
+         *
+         * @param [App/Models/Person] $id
+         * @return void
+         */
+        public static function setMembershipInvoice($id=null,$all = false){
+            if($all){
+                    $persons = Person::where('status','active')->get();
+                    
+                    foreach ($persons as $people) {
+                        Helpers::createMembershipInvoice($people->id);
+                    }
+                    return  header(url('/admin/invoice/'));
+            }else{
+                if(is_numeric($id) ){
+                    $exist = Person::where('id',$id)->first();
+                    if($exist){                         
+                            return  header( url('/admin/invoice/').'/'.Helpers::createMembershipInvoice($id));
+                        }
+                }else{
+                    dd('invalid');
+                }
+            }
+        }
+
+        /**
+         * Shortcut function for setMembershipInvoice
+         *
+         * @param [App\Models\Person] $id
+         * @return [App\Models\Invoice] $id
+         */
+        public static function createMembershipInvoice($id){
+            $personMembership = Membership::select('month')->where('person_id',$id)->orderBy('month', 'desc')->first();
+            $invoice = new Invoice;
+            $invoice->client_person_id = $id;
+            $invoice->status = 0;
+            $invoice->seller_user_id = Auth::user()->id;
+            $invoice->save();
+            
+            $membership = new Membership;
+            
+            if($personMembership !=null){
+                // if the person allready has a membership for the current month will create an invoice for the next one
+                if($personMembership->month >= date("Y-m") ){
+                    $membership->month = date("Y-m-d", strtotime("+1 month", strtotime($personMembership->month) ));
+                }else{
+                    // if the person DOESNT have a membership for the current month will create one
+                    $membership->month = date("Y-m-d H:i:s");
+                }
+            }
+
+            
+            $membership->person_id = $id;
+            $membership->invoice_id = $invoice->id;
+            $membership->save();
+
+            Helpers::updateTotalInvoice($invoice->id);
+            
+            return $invoice->id;
+    }
 
 
     }

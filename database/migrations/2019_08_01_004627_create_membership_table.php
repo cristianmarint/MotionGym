@@ -1,4 +1,12 @@
 <?php
+/**
+ * @ Author: @CristianMarinT
+ * @ Create Time: 2019-07-31 19:46:27
+ * @ Modified by: @CristianMarinT
+ * @ Modified time: 2019-08-03 12:25:42
+ * @ Description:
+ */
+
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
@@ -19,8 +27,8 @@ class CreateMembershipTable extends Migration
             $table->unsignedInteger('person_id')->nullable();
             $table->unsignedInteger('invoice_id')->nullable();
             $table->unsignedInteger('extra_id')->nullable();
-            $table->date('month')->nullable(false);
-            $table->float('price');
+            $table->date('month')->default(null)->nullable(true);
+            $table->float('price')->default('100')->nullable();
 
             
             $table->foreign('extra_id')->references('id')->on('extra')

@@ -26,3 +26,8 @@ Route::get('/home', function () {
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+
+Route::group(['middleware'=>'auth'], function() {
+    Route::post('admin/gym/memberships/','Voyager\PersonController@Memberships')->middleware('auth')->name('gym.memberships');
+});
