@@ -153,13 +153,13 @@ class DataTypesTableSeeder extends Seeder
                 'icon' => 'voyager-refresh',
                 'model_name' => 'App\\Models\\Refund',
                 'policy_name' => NULL,
-                'controller' => NULL,
+                'controller' => '\\App\\Http\\Controllers\\Voyager\\RefundController',
                 'description' => 'Here you can store product refunds .',
                 'generate_permissions' => 1,
                 'server_side' => 1,
                 'details' => '{"order_column":null,"order_display_column":"id","order_direction":"desc","default_search_key":"reason","scope":null}',
                 'created_at' => '2019-07-25 14:25:04',
-                'updated_at' => '2019-07-26 14:38:44',
+                'updated_at' => '2019-08-08 01:33:05',
             ),
             8 => 
             array (
