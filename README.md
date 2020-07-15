@@ -84,13 +84,16 @@ Its recommend to use [Xampp](https://www.apachefriends.org/es/index.html) or [Ma
 
 1. Clone the repo
 `git clone https://github.com/cristianmarint/MotionGym.git`
-2. Install composer
+
+2. Configure .env file
+`mv .env.example .env`
+3. Install composer
 `composer install`
-3.  Migrate database
+4.  Migrate database
 `php artisan migrate`
-4. Seed database
+5. Seed database
 `php artisan db:seed`
-5. Create your own admin user
+6. Create your own admin user
 `php artisan voyager:admin your_email@provider.com --create `
 or use 
 > cristianmarint@motion.gym 12345678
