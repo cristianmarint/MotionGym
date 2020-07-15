@@ -97,6 +97,10 @@ Its recommend to use [Xampp](https://www.apachefriends.org/es/index.html) or [Ma
 `php artisan voyager:admin your_email@provider.com --create `
 or use 
 > cristianmarint@motion.gym 12345678
+7. Once your login, click on "Fix Missing storage symlink" an then
+`mv public\storage_old\* public\storage`
+7.1 Delete storage_old
+`rmdir .\public\storage_old\`
 
 
 
