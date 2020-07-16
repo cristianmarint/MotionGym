@@ -79,6 +79,7 @@ To get a local copy up and running follow these simple example steps.
 
 You must have [Composer](https://getcomposer.org/download/) and a DB server.
 Its recommend to use [Xampp](https://www.apachefriends.org/es/index.html) or [Mamp](https://www.mamp.info/en/downloads/) for starters.
+PHP >= 7.4
 
 ### Installation
 
