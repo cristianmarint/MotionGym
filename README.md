@@ -95,19 +95,22 @@ PHP >= 7.4
 4.  Migrate database
 `php artisan migrate`
 
-5. Seed database
+5.  App key
+`php artisan key:generate`
+
+6. Seed database
 `php artisan db:seed`
 
-6. Create your own admin user
+7. Create your own admin user
 `php artisan voyager:admin your_email@provider.com --create `
 or use 
 > cristianmarint@motion.gym 12345678
 
-7. Once your login, click on "Fix Missing storage symlink" an then
+8. Once your login, click on "Fix Missing storage symlink" an then
 `php artisan storage:link`
 `mv public\storage_old\* public\storage`
 
-7.1 Delete storage_old
+8.1 Delete storage_old
 `rmdir .\public\storage_old\`
 
 
