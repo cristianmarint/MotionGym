@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" backupGlobals="false" bootstrap="tests/bootstrap.php" colors="true" processIsolation="false" stopOnFailure="false" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.4/phpunit.xsd" cacheDirectory=".phpunit.cache" backupStaticProperties="false">
+  <coverage>
+    <report>
+      <html outputDirectory="build/coverage"/>
+      <text outputFile="php://stdout" showUncoveredFiles="false" showOnlySummary="true"/>
+    </report>
+  </coverage>
+  <testsuites>
+    <testsuite name="Voyager Test Suite">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+  <logging>
+    <junit outputFile="build/report.junit.xml"/>
+  </logging>
+  <php>
+    <env name="APP_ENV" value="testing"/>
+    <env name="APP_DEBUG" value="true"/>
+    <env name="APP_URL" value="http://localhost"/>
+    <env name="APP_KEY" value="base64:M1igrxNfAWlVGyxxDholHqvVqvtPjAzCoJ+2/ILAVPw="/>
+  </php>
+  <source>
+    <include>
+      <directory suffix=".php">./src/</directory>
+    </include>
+  </source>
+</phpunit>
