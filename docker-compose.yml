@@ -1,15 +1,15 @@
 version: '3.8'
 
 services:
-    adminer:
-        container_name: motiongym_adminer
+    app_adminer:
+        container_name: app_adminer
         image: adminer
         restart: always
         ports:
             - "8080:8080"
-    motiongym_db_mysql:
-        container_name: motiongym_db
-        image: mysql:5.7
+    app_db:
+        container_name: app_db
+        image: mariadb:10.4.32
         command: --default-authentication-plugin=mysql_native_password
         restart: always
         environment:
@@ -18,9 +18,9 @@ services:
             MYSQL_PASSWORD: appuserpassword
             MYSQL_ROOT_PASSWORD: appuserpassword
         ports:
-            - "3306:3306"
-        volumes:
-            - motiongym_db_mysql_data:/var/lib/mysql
+            - "3388:3306"
+#        volumes:
+#            - app_db_data:/var/lib/mysql
 
 volumes:
-    motiongym_db_mysql_data:
+    app_db_data:

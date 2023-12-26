@@ -1,7 +1,7 @@
 {
     "name": "laravel/laravel",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "An open source gym management system build with Laravel 10 and Voyager 1.6",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
