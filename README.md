@@ -5,6 +5,9 @@
 5. php artisan key:generate 
 6. php artisan db:seed
 7. php artisan migrate 
+[//]: # (8. php artisan migrate:rollback)
+[//]: # (8. php artisan db:seed)
+
 8. php artisan voyager:admin admin@motion.gym --create
     admin@motion.gym admin 
 [//]: # (7. php artisan storage:link mv public\storage_old\* public\storage)
