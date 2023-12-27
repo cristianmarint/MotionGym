@@ -32,7 +32,6 @@ class CreateHumanTable extends Migration
             $table->string('first_surname',250)->nullable();
             $table->string('second_surname',250)->nullable();
             $table->char('blood_group_rh',3)->nullable();
-            $table->unsignedBigInteger('insurance_company_id')->nullable();
             $table->unsignedBigInteger('city_birth_id')->nullable();
             $table->date('birthdate')->nullable();
             $table->string('address',250)->nullable();
@@ -43,10 +42,8 @@ class CreateHumanTable extends Migration
             $table->softDeletes();
             $table->timestamps();
 
-            $table->foreign('insurance_company_id')->references('id')->on('insurance_company')
-            ->onUpdate('cascade')->onDelete('restrict');
             $table->foreign('city_birth_id')->references('id')->on('city')
-            ->onUpdate('cascade')->onDelete('restrict');
+            ->onUpdate('cascade')->onDelete('cascade');
         });
     }
 

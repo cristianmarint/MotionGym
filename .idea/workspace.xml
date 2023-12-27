@@ -22,31 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a667d476-7f19-4953-be45-40aa83234a82" name="Default Changelist" comment="blank">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_07_02_031518_create_companies_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000001_create_users_companies_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000002_create_human_companies_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MotionGym.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MotionGym.iml" afterDir="false" />
+    <list default="true" id="a667d476-7f19-4953-be45-40aa83234a82" name="Default Changelist" comment="wip multi tenancy🧑🏾‍💻👩🏾‍💻👨🏾‍💻">
+      <change afterPath="$PROJECT_DIR$/database/migrations/2014_07_02_031519_add_insurance_company_to_human.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_02_011337_create_regions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_07_02_011337_create_regions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_02_021337_create_subregions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_07_02_021337_create_subregions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_02_030014_create_country_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_07_02_030014_create_country_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_02_030014_create_state_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_07_02_030014_create_state_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_02_030016_create_city_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_07_02_030016_create_city_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_02_030511_create_insurance_company_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_07_02_030511_create_insurance_company_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_02_030777_create_human_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_07_02_030777_create_human_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_24_151533_create_add_human_to_user_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_24_154111_create_category_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_24_154111_create_category_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_24_154222_create_product_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_24_154222_create_product_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_24_222624_create_product_category_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_24_222624_create_product_category_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_12_26_195628_create_tax_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_12_26_195628_create_tax_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_12_26_200430_create_membership_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_12_26_200430_create_membership_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_12_26_200621_create_product_tax_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_12_26_200621_create_product_tax_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_12_26_201017_create_invoice_status_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_12_26_201017_create_invoice_status_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_12_26_201018_create_invoices_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_12_26_201018_create_invoices_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2023_12_26_201320_create_refunds_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_12_26_201320_create_refunds_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_07_02_030511_create_insurance_company_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_07_02_030777_create_human_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_07_02_030777_create_human_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_07_02_031518_create_companies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_07_02_031518_create_companies_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000002_create_human_companies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000002_create_human_companies_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,6 +239,7 @@
     "PHPUnit.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "feature/comeback",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/github/MotionGym/database/migrations",
@@ -372,7 +355,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703600385528</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="wip multi tenancy🧑🏾‍💻👩🏾‍💻👨🏾‍💻">
+      <option name="closed" value="true" />
+      <created>1703691549475</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703691549475</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,6 +383,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="blank" />
-    <option name="LAST_COMMIT_MESSAGE" value="blank" />
+    <MESSAGE value="wip multi tenancy‍‍‍" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip multi tenancy‍‍‍" />
   </component>
 </project>

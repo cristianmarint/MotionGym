@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -23,9 +22,10 @@ return new class extends Migration
             $table->unsignedBigInteger('city_id')->nullable();
             $table->string('phone', 20)->nullable();
             $table->string('email')->nullable();
+            $table->string('industry')->nullable();
 
             $table->foreign('city_id')->references('id')->on('city')
-                ->onUpdate('cascade')->onDelete('restrict');
+                ->onUpdate('cascade')->onDelete('cascade');
         });
     }
 
@@ -34,6 +34,11 @@ return new class extends Migration
      */
     public function down(): void
     {
+        if (Schema::hasColumn('human', 'company_creator_id')) {
+            Schema::table('human', function ($table) {
+                $table->dropForeign('human_company_creator_id_foreign');
+            });
+        }
         Schema::dropIfExists('company');
     }
 };
