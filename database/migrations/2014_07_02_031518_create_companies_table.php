@@ -34,9 +34,9 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        if (Schema::hasColumn('human', 'company_creator_id')) {
-            Schema::table('human', function ($table) {
-                $table->dropForeign('human_company_creator_id_foreign');
+        if (Schema::hasColumn('humans', 'company_creator_id')) {
+            Schema::table('humans', function ($table) {
+                $table->dropForeign('humans_company_creator_id_foreign');
             });
         }
         Schema::dropIfExists('company');

@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateHumanTable extends Migration
+class CreateHumansTable extends Migration
 {
     /**
      * Run the migrations.
@@ -21,7 +21,7 @@ class CreateHumanTable extends Migration
      */
     public function up(): void
     {
-        Schema::create('human', function (Blueprint $table) {
+        Schema::create('humans', function (Blueprint $table) {
             $table->id();
             $table->string('status',50)->nullable(true)->default('active');
             $table->string('identification', 50)->unique()->nullable(false);
@@ -54,6 +54,6 @@ class CreateHumanTable extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('human');
+        Schema::dropIfExists('humans');
     }
 }

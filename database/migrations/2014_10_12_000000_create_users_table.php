@@ -20,8 +20,8 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();
-            $table->unsignedBigInteger('human_id')->nullable();
-            $table->foreign('human_id')->references('id')->on('human')
+            $table->unsignedBigInteger('humans_id')->nullable();
+            $table->foreign('humans_id')->references('id')->on('humans')
                 ->onUpdate('cascade')->onDelete('cascade');
         });
     }

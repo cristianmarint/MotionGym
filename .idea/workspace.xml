@@ -22,13 +22,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a667d476-7f19-4953-be45-40aa83234a82" name="Default Changelist" comment="wip multi tenancy🧑🏾‍💻👩🏾‍💻👨🏾‍💻">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_07_02_031519_add_insurance_company_to_human.php" afterDir="false" />
+    <list default="true" id="a667d476-7f19-4953-be45-40aa83234a82" name="Default Changelist" comment="remove insurance company migration">
+      <change afterPath="$PROJECT_DIR$/app/Models/City.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Country.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Humans.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Region.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/State.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Subregion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/CityFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/HumansFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/CompanyTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/HumansTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_07_02_030511_create_insurance_company_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_07_02_030777_create_human_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_07_02_030777_create_human_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_07_02_030777_create_human_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_07_02_030777_create_humans_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_07_02_031518_create_companies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_07_02_031518_create_companies_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_07_02_031519_add_insurance_company_to_human.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_07_02_031519_add_insurance_company_to_human.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000002_create_human_companies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000002_create_human_companies_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2023_12_26_200430_create_membership_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_12_26_200430_create_membership_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -363,7 +375,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703691549475</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="remove insurance company migration">
+      <option name="closed" value="true" />
+      <created>1703694673360</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703694673360</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,6 +404,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="blank" />
     <MESSAGE value="wip multi tenancy‍‍‍" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip multi tenancy‍‍‍" />
+    <MESSAGE value="remove insurance company migration" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove insurance company migration" />
   </component>
 </project>

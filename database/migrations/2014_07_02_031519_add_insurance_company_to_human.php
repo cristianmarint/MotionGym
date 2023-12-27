@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void
     {
-        Schema::table('human', function (Blueprint $table) {
+        Schema::table('humans', function (Blueprint $table) {
             $table->unsignedBigInteger('insurance_company_id')->nullable();
             $table->unsignedBigInteger('company_creator_id')->nullable();
 
@@ -20,14 +20,14 @@ return new class extends Migration {
 
     public function down(): void
     {
-        if (Schema::hasColumn('human', 'insurance_company_id')) {
-            Schema::table('human', function ($table) {
-                $table->dropForeign('human_insurance_company_id_foreign');
+        if (Schema::hasColumn('humans', 'insurance_company_id')) {
+            Schema::table('humans', function ($table) {
+                $table->dropForeign('humans_insurance_company_id_foreign');
             });
         }
         if (Schema::hasColumn('users', 'company_creator_id')) {
             Schema::table('users', function ($table) {
-                $table->dropForeign('human_company_creator_id_foreign');
+                $table->dropForeign('humans_company_creator_id_foreign');
             });
         }
     }

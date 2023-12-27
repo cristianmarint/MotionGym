@@ -19,9 +19,9 @@ return new class extends Migration
             $table->date('start_date')->nullable(false);
             $table->date('end_date')->nullable(false);
             $table->decimal('price', 10, 2)->nullable(false);
-            $table->unsignedBigInteger('human_id');
+            $table->unsignedBigInteger('humans_id');
 
-            $table->foreign('human_id')->references('id')->on('human')
+            $table->foreign('humans_id')->references('id')->on('humans')
                 ->onUpdate('cascade')->onDelete('cascade');
 
             $table->unsignedBigInteger('company_id')->nullable();

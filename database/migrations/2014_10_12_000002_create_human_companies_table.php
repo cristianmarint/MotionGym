@@ -10,15 +10,15 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('human_company', function (Blueprint $table) {
+        Schema::create('humans_company', function (Blueprint $table) {
             $table->id();
 
             $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users')
                 ->onUpdate('cascade')->onDelete('restrict');
 
-            $table->unsignedBigInteger('human_id')->nullable();
-            $table->foreign('human_id')->references('id')->on('human')
+            $table->unsignedBigInteger('humans_id')->nullable();
+            $table->foreign('humans_id')->references('id')->on('humans')
                 ->onUpdate('cascade')->onDelete('restrict');
 
             $table->string('status', 50)->nullable()->default('active');
@@ -60,6 +60,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('human_company');
+        Schema::dropIfExists('humans_company');
     }
 };
