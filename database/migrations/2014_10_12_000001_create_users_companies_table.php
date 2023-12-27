@@ -11,19 +11,19 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('product_tax', function (Blueprint $table) {
+        Schema::create('users_company', function (Blueprint $table) {
             $table->id();
-            $table->softDeletes();
-            $table->timestamps();
-            $table->unsignedBigInteger('product_id');
-            $table->unsignedBigInteger('tax_id');
 
-            $table->foreign('product_id')->references('id')->on('product');
-            $table->foreign('tax_id')->references('id')->on('tax');
+            $table->unsignedBigInteger('users_id')->nullable();
+            $table->foreign('users_id')->references('id')->on('users')
+                ->onUpdate('cascade')->onDelete('restrict');
 
             $table->unsignedBigInteger('company_id')->nullable();
             $table->foreign('company_id')->references('id')->on('company')
                 ->onUpdate('cascade')->onDelete('restrict');
+
+            $table->softDeletes();
+            $table->timestamps();
         });
     }
 
@@ -32,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('product_tax');
+        Schema::dropIfExists('users_company');
     }
 };

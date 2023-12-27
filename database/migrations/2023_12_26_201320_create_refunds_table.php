@@ -20,6 +20,9 @@ return new class extends Migration
             $table->unsignedBigInteger('invoice_id');
             $table->foreign('invoice_id')->references('id')->on('invoices');
 
+            $table->unsignedBigInteger('company_id')->nullable();
+            $table->foreign('company_id')->references('id')->on('company')
+                ->onUpdate('cascade')->onDelete('restrict');
         });
     }
 

@@ -16,7 +16,6 @@ class CreateProductCategoryTable extends Migration
         Schema::create('product_category', function (Blueprint $table) {
             $table->id();
 
-
             $table->unsignedBigInteger('product_id')->nullable();
             $table->foreign('product_id')->references('id')->on('product')
             ->onUpdate('cascade')->onDelete('restrict');
@@ -27,6 +26,10 @@ class CreateProductCategoryTable extends Migration
 
             $table->softDeletes();
             $table->timestamps();
+
+            $table->unsignedBigInteger('company_id')->nullable();
+            $table->foreign('company_id')->references('id')->on('company')
+                ->onUpdate('cascade')->onDelete('restrict');
         });
     }
 

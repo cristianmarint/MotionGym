@@ -19,7 +19,7 @@ class CreateInsuranceCompanyTable extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('insurance_company', function (Blueprint $table) {
             $table->id();
@@ -37,7 +37,7 @@ class CreateInsuranceCompanyTable extends Migration
      *
      * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('insurance_company');
     }

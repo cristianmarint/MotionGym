@@ -22,7 +22,9 @@ return new class extends Migration {
                 ->charset('utf8mb4')->collation('utf8mb4_unicode_ci')
                 ->nullable()->comment('Rapid API GeoDB Cities');
             $table->index('region_id', 'subregion_continent');
-            $table->foreign('region_id', 'subregion_continent_final')->references('id')->on('region');
+            $table->foreign('region_id', 'subregion_continent_final')
+                ->references('id')->on('region')
+                ->onUpdate('cascade')->onDelete('restrict');
         });
     }
 

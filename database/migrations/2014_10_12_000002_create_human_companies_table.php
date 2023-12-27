@@ -1,30 +1,29 @@
 <?php
-/**
- * @ Author: @CristianMarinT
- * @ Create Time: 2019-07-01 22:06:07
- * @ Modified by: @CristianMarinT
- * @ Modified time: 2019-07-31 16:14:04
- * @ Description:
- */
 
-
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
-class CreateHumanTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
     public function up(): void
     {
-        Schema::create('human', function (Blueprint $table) {
+        Schema::create('human_company', function (Blueprint $table) {
             $table->id();
-            $table->string('status',50)->nullable(true);
-            $table->string('identification', 50)->nullable(false);
+
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users')
+                ->onUpdate('cascade')->onDelete('restrict');
+
+            $table->unsignedBigInteger('human_id')->nullable();
+            $table->foreign('human_id')->references('id')->on('human')
+                ->onUpdate('cascade')->onDelete('restrict');
+
+            $table->string('status',50)->nullable()->default('active');
+            $table->string('identification', 50)->unique()->nullable();
             $table->string('identification_type', 50)->nullable();
             $table->string('photo', 500)->default(null)->nullable();
             $table->string('name',250)->nullable();
@@ -40,25 +39,25 @@ class CreateHumanTable extends Migration
             $table->string('phone',50)->nullable();
             $table->string('gender',50)->nullable();
 
-
             $table->softDeletes();
             $table->timestamps();
 
-
             $table->foreign('insurance_company_id')->references('id')->on('insurance_company')
-            ->onUpdate('cascade')->onDelete('restrict');
+                ->onUpdate('cascade')->onDelete('restrict');
             $table->foreign('city_birth_id')->references('id')->on('city')
-            ->onUpdate('cascade')->onDelete('restrict');
+                ->onUpdate('cascade')->onDelete('restrict');
+
+            $table->unsignedBigInteger('company_id')->nullable();
+            $table->foreign('company_id')->references('id')->on('company')
+                ->onUpdate('cascade')->onDelete('restrict');
         });
     }
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
-        Schema::dropIfExists('human');
+        Schema::dropIfExists('human_company');
     }
-}
+};

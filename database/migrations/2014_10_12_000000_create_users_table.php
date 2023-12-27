@@ -19,7 +19,10 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-            $table->softDeletes(); // <-- This will add a deleted_at field
+            $table->softDeletes();
+            $table->unsignedBigInteger('human_id')->nullable();
+            $table->foreign('human_id')->references('id')->on('human')
+                ->onUpdate('cascade')->onDelete('cascade');
         });
     }
 

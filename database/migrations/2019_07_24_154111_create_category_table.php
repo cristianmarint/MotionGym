@@ -32,6 +32,10 @@ class CreateCategoryTable extends Migration
 
             $table->softDeletes();
             $table->timestamps();
+
+            $table->unsignedBigInteger('company_id')->nullable();
+            $table->foreign('company_id')->references('id')->on('company')
+                ->onUpdate('cascade')->onDelete('restrict');
         });
     }
 

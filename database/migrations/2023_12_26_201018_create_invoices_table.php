@@ -22,6 +22,10 @@ return new class extends Migration
             $table->json('product_details');
             $table->unsignedBigInteger('invoice_status_id');
             $table->foreign('invoice_status_id')->references('id')->on('invoice_status');
+
+            $table->unsignedBigInteger('company_id')->nullable();
+            $table->foreign('company_id')->references('id')->on('company')
+                ->onUpdate('cascade')->onDelete('restrict');
         });
     }
 

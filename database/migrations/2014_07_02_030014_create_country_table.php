@@ -52,8 +52,10 @@ class CreateCountryTable extends Migration
                 ->nullable()->comment('Rapid API GeoDB Cities');
             $table->index('region_id', 'country_continent');
             $table->index('subregion_id', 'country_subregion');
-            $table->foreign('region_id', 'country_continent_final')->references('id')->on('region');
-            $table->foreign('subregion_id', 'country_subregion_final')->references('id')->on('subregion');
+            $table->foreign('region_id')->references('id')->on('region')
+                ->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('subregion_id')->references('id')->on('subregion')
+                ->onUpdate('cascade')->onDelete('cascade');
         });
     }
 
@@ -64,6 +66,10 @@ class CreateCountryTable extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('state');
+        Schema::table('country', function (Blueprint $table) {
+            $table->dropForeign('country_region_id_foreign');
+            $table->dropForeign('country_subregion_id_foreign');
+        });
+        Schema::dropIfExists('country');
     }
 }

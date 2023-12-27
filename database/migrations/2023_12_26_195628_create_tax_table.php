@@ -17,6 +17,10 @@ return new class extends Migration {
             $table->string('name', 250);
             $table->text('description')->nullable();
             $table->float('rate', 6, 3);
+
+            $table->unsignedBigInteger('company_id')->nullable();
+            $table->foreign('company_id')->references('id')->on('company')
+                ->onUpdate('cascade')->onDelete('restrict');
         });
     }
 
@@ -25,6 +29,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('taxes');
+        Schema::dropIfExists('tax');
     }
 };
